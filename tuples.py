@@ -3,11 +3,9 @@ print("Enter the values of the tuple")
 t =  tuple([eval(x) for x in input("Enter the values: ").split(',')])
 
 #removing Duplicate Elements Of The Tuple
-refer = []
 modified = []
 for i in t:
-    if i not in refer:
-        refer.append(i)
+    if i not in modified:
         modified.append(i)
         
 print("The modified tuple after removing the duplicates is: ")
